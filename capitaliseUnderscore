@@ -1,0 +1,8 @@
+function capitaliserUnder(input) {
+  const splitted = input.split(" ");
+  const capitalized = splitted.map(function (item) {
+    return item.charAt(0).toUpperCase() + item.slice(1);
+  });
+  const joined = capitalized.join("_");
+  return joined;
+}
