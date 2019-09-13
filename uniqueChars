@@ -1,0 +1,7 @@
+function uniqueChars(input) {
+    let chars = input.split('');
+    let uniqs = chars.filter(function (value, index, self) { 
+        return self.lastIndexOf(value) === index && self.indexOf(value) === index;
+    });
+    return uniqs.join(',');
+}
