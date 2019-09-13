@@ -1,0 +1,10 @@
+ function countDigits(input) {
+    let counter = [];
+    for (i=0; i < input.length; i++) {
+        if (input[i] === ' ') {
+            continue;
+        }
+        counter[input[i]] = counter[input[i]] + 1 || 1;
+    }
+    return counter;
+}
